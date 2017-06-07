@@ -1,0 +1,14 @@
+{
+  "images": {
+    "about-career": "about-career.jpg"
+  },
+  "orientation": "vertical",
+  "optimize": "lossless",
+  "padding": 10,
+  "output": "jpg",
+  "stylesheet": "css",
+  "pathprefix": "",
+  "customstyles": {
+    "display": "inline-block"
+  }
+}
