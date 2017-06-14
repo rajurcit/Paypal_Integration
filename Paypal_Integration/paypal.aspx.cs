@@ -22,12 +22,8 @@ namespace Paypal_Integration
         string url_token = "https://api.sandbox.paypal.com/v1/oauth2/token";
         protected void Page_Load(object sender, EventArgs e)
         {
-            data();
-         
+            data();           
         }
-        
- 
-
         public void data()
         {
             string authUrl = "https://api.sandbox.paypal.com/v1/oauth2/token";           
@@ -97,7 +93,7 @@ namespace Paypal_Integration
             public string app_id { get; set; }
             public int expires_in { get; set; }
         }
-
-
+              
+       
     }
 }

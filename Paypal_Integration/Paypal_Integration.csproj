@@ -48,9 +48,21 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MSSQL, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MSSQL.1.0.1\lib\net451\MSSQL.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\Projects\iOrderFresh\IOrderFresh\IOFWebsite\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.Common.4.1.0\lib\net451\System.Data.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.SqlClient, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.1.0\lib\net451\System.Data.SqlClient.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System.Net" />
     <Reference Include="System.Net.Http" />
@@ -73,7 +85,18 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Bluetooth Headset.jpeg" />
+    <Content Include="BulkCopy.aspx" />
+    <Content Include="DotNetLogo.gif" />
+    <Content Include="JS\angular.min.js" />
+    <Content Include="JS\NodeServer.js" />
+    <Content Include="NodeJS.aspx" />
     <Content Include="packages.config" />
+    <Content Include="paypalbtn.gif" />
+    <Content Include="philips-598.jpg" />
+    <Content Include="Site.Master" />
+    <Content Include="paypal_Websites.aspx" />
+    <Content Include="xbox-720-rumor-1.jpg" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -88,6 +111,21 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Code\RedirectToPaypal.cs" />
+    <Compile Include="BulkCopy.aspx.cs">
+      <DependentUpon>BulkCopy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BulkCopy.aspx.designer.cs">
+      <DependentUpon>BulkCopy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NodeJS.aspx.cs">
+      <DependentUpon>NodeJS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NodeJS.aspx.designer.cs">
+      <DependentUpon>NodeJS.aspx</DependentUpon>
+    </Compile>
     <Compile Include="paypal.aspx.cs">
       <DependentUpon>paypal.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -95,8 +133,26 @@
     <Compile Include="paypal.aspx.designer.cs">
       <DependentUpon>paypal.aspx</DependentUpon>
     </Compile>
+    <Compile Include="PayPalFunctions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PyapalDetails.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="paypal_Websites.aspx.cs">
+      <DependentUpon>paypal_Websites.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="paypal_Websites.aspx.designer.cs">
+      <DependentUpon>paypal_Websites.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Files\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
